@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ЭФИРИУМ - Контакты</title>
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header @@header" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="index.html" class="header__logotype">
+						<img src="img/logotype.svg" width="167px" height="40px" alt="ЭФИРИУМ">
+					</a>
+					<nav class="nav header__nav">
+						<ul class="nav__list">
+							<li class="nav__item @@about-company">
+								<a href="about-company.html" class="nav__link">О компании</a>
+							</li>
+							<li class="nav__item @@products">
+								<a href="products.html" class="nav__link">Продукция</a>
+							</li>
+							<li class="nav__item nav__item--active">
+								<a href="contacts.html" class="nav__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<a href="+79185169817" class="header__number">+7 918 516 98 17</a>
+					<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+						<span class="hamburger__inner"></span>
+						<span class="hamburger__inner"></span>
+						<span class="hamburger__inner"></span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- mobile menu -->
+		<div class="mobile-menu" id="mobile-menu">
+			<div class="mobile-menu__top">
+				<a href="index.html" class="mobile-menu__logotype">
+					<img src="img/logotype.svg" width="117px" height="28px" alt="ЭФИРИУМ">
+				</a>
+				<button class="mobile-menu__close" id="mobile-menu-close" aria-label="Закрыть">
+					<svg class="mobile-menu__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+			<nav class="nav mobile-menu__nav">
+				<ul class="nav__list">
+					<li class="nav__item @@about-company">
+						<a href="about-company.html" class="nav__link">О компании</a>
+					</li>
+					<li class="nav__item @@products">
+						<a href="products.html" class="nav__link">Продукция</a>
+					</li>
+					<li class="nav__item @@contacts">
+						<a href="contacts.html" class="nav__link">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="mobile-menu__bottom">
+				<a href="+79185169817" class="mobile-menu__link">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-tel"></use>
+					</svg>
+					<span>+7 918 516 98 17</span>
+				</a>
+				<ul class="c-socials c-socials--accent mobile-menu__socials">
+					<li class="c-socials__item">
+						<a href="#" class="c-socials__link">
+							<svg class="c-socials__icon">
+								<use xlink:href="img/sprite.svg#icon-instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="c-socials__item">
+						<a href="#" class="c-socials__link">
+							<svg class="c-socials__icon">
+								<use xlink:href="img/sprite.svg#icon-telegram"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+		<!-- end of mobile menu -->
+		<!-- contacts -->
+		<section class="contacts" id="contacts">
+			<div class="container">
+				<div class="contacts__wrapper">
+					<div class="contacts-tabs contacts__tabs">
+						<ul class="contacts-tabs__list">
+							<li class="contacts-tabs__item contacts-tabs__item--active">
+								<button class="contacts-tabs__tab">
+									<span class="contacts-tabs__help">Головной офис</span>
+									<span class="contacts-tabs__title">КРАСНОДАР</span>
+								</button>
+							</li>
+							<li class="contacts-tabs__item">
+								<button class="contacts-tabs__tab">
+									<span class="contacts-tabs__help">Региональный офис</span>
+									<span class="contacts-tabs__title">СТАВРОПОЛЬ</span>
+								</button>
+							</li>
+						</ul>
+						<div class="contacts-tabs__wrapper contacts-tabs__wrapper--active">
+							<p class="contacts__description">Новое решение для длительного контроля широкого спектра <br>сорняков в посевах кукурузы...</p>
+						</div>
+						<div class="contacts-tabs__wrapper">
+							<p class="contacts__description">Новое решение для длительного контроля широкого спектра <br>сорняков в посевах кукурузы...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end of contacts -->
+		<!-- feedback -->
+		<section class="feedback" id="feedback">
+			<div class="container">
+				<div class="feedback__wrapper">
+					<h2 class="feedback__title">форма обратной связи</h2>
+					<form action="#" class="feedback-form feedback__form">
+						<div class="feedback-form__inner">
+							<div class="input-control feedback-form__input">
+								<input type="text" id="feedback-full-name" class="input-control__input" placeholder="Введите ФИО" required>
+								<label for="feedback-full-name" class="input-control__label">Полное имя</label>
+								<div class="input-control__line"></div>
+							</div>
+							<div class="input-control feedback-form__input">
+								<input type="tel" id="feedback-number" class="input-control__input" placeholder="Введите номер" data-inputmask="'mask': '+7 (999) 999-99-99'" required>
+								<label for="feedback-number" class="input-control__label">Номер телефона</label>
+								<div class="input-control__line"></div>
+							</div>
+							<div class="input-control feedback-form__input">
+								<input type="email" id="feedback-email" class="input-control__input" placeholder="Введите email" required>
+								<label for="feedback-email" class="input-control__label">Ваш email</label>
+								<div class="input-control__line"></div>
+							</div>
+						</div>
+						<div class="feedback-form__inner">
+							<div class="input-control feedback-form__input">
+								<textarea id="feedback-text" class="input-control__textarea" placeholder="Введите сообщение"></textarea>
+								<label for="feedback-text" class="input-control__label">Ваше обращение</label>
+								<div class="input-control__line"></div>
+							</div>
+						</div>
+						<div class="feedback-form__bottom">
+							<button class="feedback-form__btn btn">Заказать</button>
+							<p class="feedback-form__help">Нажимая кнопку «ЗАКАЗАТЬ», вы принимаете условия <a href="#">Пользовательского соглашения</a></p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- end of feedback -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- footer -->
+	<footer class="footer footer--sm-mt">
+		<div class="footer__main">
+			<div class="container">
+				<div class="footer__wrapper">
+					<a href="index.html" class="footer__logotype">
+						<img src="img/logotype.svg" width="137px" height="32px" alt="ЭФИРИУМ">
+					</a>
+					<div class="footer__block">
+						<nav class="footer-nav footer__nav footer__nav--desktop">
+							<ul class="footer-nav__list">
+								<li class="footer-nav__item @@about-company">
+									<a href="about-company.html" class="footer-nav__link">О компании</a>
+								</li>
+								<li class="footer-nav__item @@products">
+									<a href="products.html" class="footer-nav__link">Продукция</a>
+								</li>
+								<li class="footer-nav__item @@contacts">
+									<a href="contacts.html" class="footer-nav__link">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<ul class="c-socials footer__socials">
+							<li class="c-socials__item">
+								<a href="#" class="c-socials__link">
+									<svg class="c-socials__icon">
+										<use xlink:href="img/sprite.svg#icon-instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="c-socials__item">
+								<a href="#" class="c-socials__link">
+									<svg class="c-socials__icon">
+										<use xlink:href="img/sprite.svg#icon-telegram"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__wrapper footer__wrapper--contacts">
+					<nav class="footer-nav footer__nav footer__nav--mobile">
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item @@about-company">
+								<a href="about-company.html" class="footer-nav__link">О компании</a>
+							</li>
+							<li class="footer-nav__item @@products">
+								<a href="products.html" class="footer-nav__link">Продукция</a>
+							</li>
+							<li class="footer-nav__item @@contacts">
+								<a href="contacts.html" class="footer-nav__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<ul class="c-contacts footer__contacts">
+						<li class="c-contacts__item">
+							<a href="tel:+79185169817" class="c-contacts__link">
+								<svg class="c-contacts__icon">
+									<use xlink:href="img/sprite.svg#icon-tel"></use>
+								</svg>
+								<span>+7 918 516 98 17</span>
+							</a>
+						</li>
+						<li class="c-contacts__item">
+							<a href="mailto:examplemail@gmail.com" class="c-contacts__link">
+								<svg class="c-contacts__icon">
+									<use xlink:href="img/sprite.svg#icon-email"></use>
+								</svg>
+								<span>examplemail@gmail.com</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="c-contacts footer__contacts">
+						<li class="c-contacts__item">
+							<address class="c-contacts__link">
+								<svg class="c-contacts__icon">
+									<use xlink:href="img/sprite.svg#icon-location"></use>
+								</svg>
+								<span>Краснодар, ул. Фрунзе 134/12</span>
+							</address>
+						</li>
+						<li class="c-contacts__item">
+							<address class="c-contacts__link">
+								<svg class="c-contacts__icon">
+									<use xlink:href="img/sprite.svg#icon-location"></use>
+								</svg>
+								<span>Краснодар, ул. Фрунзе 134/12</span>
+							</address>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<div class="footer__wrapper footer__wrapper--bottom">
+					<p class="footer__copyright">© Copyright 2019 LLC Omnitech. All rights reserved. Various trademarks held by their respective owners.</p>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="#" class="footer__link">Политика конфиденциальности</a>
+						</li>
+						<li class="footer__item">
+							<span class="footer__text">Разработка сайта -</span>
+							<a href="#" class="footer__link">Mosco Web</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end of footer -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

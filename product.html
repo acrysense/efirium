@@ -128,10 +128,52 @@
 						<img src="img/products-01.png" alt="Image">
 					</picture>
 					<div class="product__info">
+						<h2 class="product__title product__title--mobile">оформление</h2>
 						<div class="product__prices product__prices--desktop">
 							<span class="product__price product__price--new">11 236 ₽</span>
 							<span class="product__price product__price--old">15 236 ₽</span>
 						</div>
+						<form action="#" class="product-form product__form">
+							<div class="product-form__inner">
+								<div class="input-control product-form__input">
+									<select class="input-control__select">
+										<option value="0">Выберите объем</option>
+										<option value="1">5 л</option>
+										<option value="2">10 л</option>
+										<option value="3">50 л</option>
+										<option value="4">100 л</option>
+									</select>
+									<label class="input-control__label">Количество средства</label>
+									<div class="input-control__line"></div>
+								</div>
+								<div class="input-control product-form__input">
+									<input type="text" id="product-name" class="input-control__input" placeholder="Введите название" required>
+									<label for="product-name" class="input-control__label">Название компании</label>
+									<div class="input-control__line"></div>
+								</div>
+							</div>
+							<div class="product-form__inner">
+								<div class="input-control product-form__input">
+									<input type="text" id="product-full-name" class="input-control__input" placeholder="Введите ФИО" required>
+									<label for="product-full-name" class="input-control__label">Полное имя</label>
+									<div class="input-control__line"></div>
+								</div>
+							</div>
+							<div class="product-form__inner">
+								<div class="input-control product-form__input">
+									<input type="tel" id="product-number" class="input-control__input" placeholder="Введите номер" data-inputmask="'mask': '+7 (999) 999-99-99'" required>
+									<label for="product-number" class="input-control__label">Номер телефона</label>
+									<div class="input-control__line"></div>
+								</div>
+								<div class="input-control product-form__input">
+									<input type="email" id="product-email" class="input-control__input" placeholder="Введите email" required>
+									<label for="product-email" class="input-control__label">Ваш email</label>
+									<div class="input-control__line"></div>
+								</div>
+							</div>
+							<p class="product-form__help">Нажимая кнопку «ЗАКАЗАТЬ», вы принимаете условия <a href="#">Пользовательского соглашения</a></p>
+							<button class="product-form__btn btn">Заказать</button>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -156,127 +198,129 @@
 							</button>
 						</div>
 					</div>
-					<div class="swiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<article class="products__item products__item--lg">
-									<a href="products.html" class="products__inner">
-										<picture class="products__img">
-											<img src="img/products-01.png" alt="Image">
-										</picture>
-										<div class="products__body">
-											<div class="products__main">
-												<span class="products__title">ЭфиПро</span>
-												<span class="products__description">Прилипатель, криопротектор, стимулятор роста, антидот, почвенный активатор, ингибитор болезней, антитранспирант</span>
-												<span class="products__text">
-													0,5 л/тн - предпосевная обработка;<br>
-													0,5-1 л/га - опрыскивание вегетирующих растений
-												</span>
-											</div>
-											<div class="products__bottom">
-												<div class="products__prices">
-													<span class="products__price products__price--new">11 236 ₽</span>
-													<span class="products__price products__price--old">15 236 ₽</span>
+					<div class="products__slider-wrapper">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<article class="products__item products__item--lg">
+										<a href="products.html" class="products__inner">
+											<picture class="products__img">
+												<img src="img/products-01.png" alt="Image">
+											</picture>
+											<div class="products__body">
+												<div class="products__main">
+													<span class="products__title">ЭфиПро</span>
+													<span class="products__description">Прилипатель, криопротектор, стимулятор роста, антидот, почвенный активатор, ингибитор болезней, антитранспирант</span>
+													<span class="products__text">
+														0,5 л/тн - предпосевная обработка;<br>
+														0,5-1 л/га - опрыскивание вегетирующих растений
+													</span>
 												</div>
-												<span class="products__help">Россия, Беларусь, Молдова, Сербия</span>
-											</div>
-										</div>
-									</a>
-									<a href="#" class="products__btn btn">Заказать</a>
-								</article>
-							</div>
-							<div class="swiper-slide">
-								<article class="products__item">
-									<a href="products.html" class="products__inner">
-										<picture class="products__img">
-											<img src="img/products-02.png" alt="Image">
-										</picture>
-										<div class="products__body">
-											<div class="products__main">
-												<span class="products__title">Эфигуми</span>
-												<span class="products__text">Биостимулятор роста растений. Универсальное антистрессовое, ростоускоряющее, ...</span>
-											</div>
-											<div class="products__bottom">
-												<div class="products__prices">
-													<span class="products__price products__price--new">11 236 ₽</span>
-													<span class="products__price products__price--old">15 236 ₽</span>
+												<div class="products__bottom">
+													<div class="products__prices">
+														<span class="products__price products__price--new">11 236 ₽</span>
+														<span class="products__price products__price--old">15 236 ₽</span>
+													</div>
+													<span class="products__help">Россия, Беларусь, Молдова, Сербия</span>
 												</div>
-												<span class="products__help">Россия, Беларусь, Молдова, Сербия</span>
 											</div>
-										</div>
-									</a>
-									<a href="#" class="products__btn btn">Заказать</a>
-								</article>
-							</div>
-							<div class="swiper-slide">
-								<article class="products__item">
-									<a href="products.html" class="products__inner">
-										<picture class="products__img">
-											<img src="img/products-03.png" alt="Image">
-										</picture>
-										<div class="products__body">
-											<div class="products__main">
-												<span class="products__title">Эфигуми Бор</span>
-												<span class="products__text">Рекомендован для посевов кукурузы. Биостимулятор роста растений. Антистрессовое, ростоускоряющее, ...</span>
-											</div>
-											<div class="products__bottom">
-												<div class="products__prices">
-													<span class="products__price products__price--new">11 236 ₽</span>
-													<span class="products__price products__price--old">15 236 ₽</span>
+										</a>
+										<a href="#" class="products__btn btn">Заказать</a>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="products__item">
+										<a href="products.html" class="products__inner">
+											<picture class="products__img">
+												<img src="img/products-02.png" alt="Image">
+											</picture>
+											<div class="products__body">
+												<div class="products__main">
+													<span class="products__title">Эфигуми</span>
+													<span class="products__text">Биостимулятор роста растений. Универсальное антистрессовое, ростоускоряющее, ...</span>
 												</div>
-												<span class="products__help">Россия, Беларусь, Молдова, Сербия</span>
-											</div>
-										</div>
-									</a>
-									<a href="#" class="products__btn btn">Заказать</a>
-								</article>
-							</div>
-							<div class="swiper-slide">
-								<article class="products__item">
-									<a href="products.html" class="products__inner">
-										<picture class="products__img">
-											<img src="img/products-04.png" alt="Image">
-										</picture>
-										<div class="products__body">
-											<div class="products__main">
-												<span class="products__title">Эфигуми Молибден/Бор</span>
-												<span class="products__text">Рекоменован для посевов сои, гороха и нута. Содержит микроэлименты ...</span>
-											</div>
-											<div class="products__bottom">
-												<div class="products__prices">
-													<span class="products__price products__price--new">11 236 ₽</span>
-													<span class="products__price products__price--old">15 236 ₽</span>
+												<div class="products__bottom">
+													<div class="products__prices">
+														<span class="products__price products__price--new">11 236 ₽</span>
+														<span class="products__price products__price--old">15 236 ₽</span>
+													</div>
+													<span class="products__help">Россия, Беларусь, Молдова, Сербия</span>
 												</div>
-												<span class="products__help">Россия, Беларусь, Молдова, Сербия</span>
 											</div>
-										</div>
-									</a>
-									<a href="#" class="products__btn btn">Заказать</a>
-								</article>
-							</div>
-							<div class="swiper-slide">
-								<article class="products__item products__item--lg">
-									<a href="products.html" class="products__inner">
-										<picture class="products__img">
-											<img src="img/products-05.png" alt="Image">
-										</picture>
-										<div class="products__body">
-											<div class="products__main">
-												<span class="products__title">Эфибио <br>ИНОКУЛЯНТ</span>
-												<span class="products__description">Использование препарата направлено на обеспечение биологической фиксации...</span>
-												<span class="products__text">2 л/тн - предпосевная обработка</span>
-											</div>
-											<div class="products__bottom">
-												<div class="products__prices">
-													<span class="products__price products__price--new">11 236 ₽</span>
-													<span class="products__price products__price--old">15 236 ₽</span>
+										</a>
+										<a href="#" class="products__btn btn">Заказать</a>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="products__item">
+										<a href="products.html" class="products__inner">
+											<picture class="products__img">
+												<img src="img/products-03.png" alt="Image">
+											</picture>
+											<div class="products__body">
+												<div class="products__main">
+													<span class="products__title">Эфигуми Бор</span>
+													<span class="products__text">Рекомендован для посевов кукурузы. Биостимулятор роста растений. Антистрессовое, ростоускоряющее, ...</span>
 												</div>
-												<span class="products__help">Россия, Беларусь, Молдова, Сербия</span>
+												<div class="products__bottom">
+													<div class="products__prices">
+														<span class="products__price products__price--new">11 236 ₽</span>
+														<span class="products__price products__price--old">15 236 ₽</span>
+													</div>
+													<span class="products__help">Россия, Беларусь, Молдова, Сербия</span>
+												</div>
 											</div>
-										</div>
-									</a>
-									<a href="#" class="products__btn btn">Заказать</a>
-								</article>
+										</a>
+										<a href="#" class="products__btn btn">Заказать</a>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="products__item">
+										<a href="products.html" class="products__inner">
+											<picture class="products__img">
+												<img src="img/products-04.png" alt="Image">
+											</picture>
+											<div class="products__body">
+												<div class="products__main">
+													<span class="products__title">Эфигуми Молибден/Бор</span>
+													<span class="products__text">Рекоменован для посевов сои, гороха и нута. Содержит микроэлименты ...</span>
+												</div>
+												<div class="products__bottom">
+													<div class="products__prices">
+														<span class="products__price products__price--new">11 236 ₽</span>
+														<span class="products__price products__price--old">15 236 ₽</span>
+													</div>
+													<span class="products__help">Россия, Беларусь, Молдова, Сербия</span>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="products__btn btn">Заказать</a>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="products__item products__item--lg">
+										<a href="products.html" class="products__inner">
+											<picture class="products__img">
+												<img src="img/products-05.png" alt="Image">
+											</picture>
+											<div class="products__body">
+												<div class="products__main">
+													<span class="products__title">Эфибио <br>ИНОКУЛЯНТ</span>
+													<span class="products__description">Использование препарата направлено на обеспечение биологической фиксации...</span>
+													<span class="products__text">2 л/тн - предпосевная обработка</span>
+												</div>
+												<div class="products__bottom">
+													<div class="products__prices">
+														<span class="products__price products__price--new">11 236 ₽</span>
+														<span class="products__price products__price--old">15 236 ₽</span>
+													</div>
+													<span class="products__help">Россия, Беларусь, Молдова, Сербия</span>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="products__btn btn">Заказать</a>
+									</article>
+								</div>
 							</div>
 						</div>
 					</div>
