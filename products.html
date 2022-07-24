@@ -101,19 +101,173 @@
 			<div class="container">
 				<div class="section-heading">
 					<h2 class="section-heading__title">Продукция</h2>
-				</div>
-				<div class="catalog__wrapper">
-					<div class="catalog__left">
-						<div class="filter">
+					<div class="section-heading__filter filter">
+						<button class="filter__trigger" id="filter-toggle" aria-label="Фильтры">
+							<svg class="filter__trigger-icon">
+								<use xlink:href="img/sprite.svg#icon-filter"></use>
+							</svg>
+						</button>
+						<form action="" class="filter__form">
 							<div class="filter__block">
 								<h3 class="filter__title">ФИЛЬТРЫ</h3>
+								<div class="input-control filter__select">
+									<select class="input-control__select">
+										<option value="0">Одна или несколько</option>
+										<option value="1">Одна</option>
+										<option value="2">10</option>
+										<option value="3">20</option>
+									</select>
+									<label class="input-control__label">КУЛЬТУРА</label>
+									<div class="input-control__line"></div>
+								</div>
+								<div class="filter__checkboxes">
+									<label class="circle-checkbox filter__checkbox" for="filter-couture-01">
+										<input class="circle-checkbox__input" type="radio" name="filter-couture" id="filter-couture-01">
+										<span class="circle-checkbox__icon"></span>
+										<span class="circle-checkbox__label">ЯРОВЫЕ КУЛЬТУРЫ</span>
+									</label>
+									<label class="circle-checkbox filter__checkbox" for="filter-couture-02">
+										<input class="circle-checkbox__input" type="radio" name="filter-couture" id="filter-couture-02">
+										<span class="circle-checkbox__icon"></span>
+										<span class="circle-checkbox__label">ОЗИМОВЫЕ КУЛЬТУРЫ</span>
+									</label>
+								</div>
+								<div class="input-control filter__select">
+									<select class="input-control__select">
+										<option value="0">Одна или несколько</option>
+										<option value="1">Вид 1</option>
+										<option value="2">Вид 2</option>
+									</select>
+									<label class="input-control__label">ВИД ПРЕПАРАТА</label>
+									<div class="input-control__line"></div>
+								</div>
+								<div class="input-control filter__select">
+									<select class="input-control__select">
+										<option value="0">Выберите страну посева</option>
+										<option value="1">Страна 1</option>
+										<option value="2">Страна 2</option>
+									</select>
+									<label class="input-control__label">СТРАНА</label>
+									<div class="input-control__line"></div>
+								</div>
+								<div class="input-control filter__select">
+									<select class="input-control__select">
+										<option value="0">Выберите регион посева</option>
+										<option value="1">Регион 1</option>
+										<option value="2">Регион 2</option>
+									</select>
+									<label class="input-control__label">РЕГИОН</label>
+									<div class="input-control__line"></div>
+								</div>
 							</div>
 							<div class="filter__block">
 								<h3 class="filter__title">ЦЕНА</h3>
 							</div>
 							<div class="filter__block">
 								<h3 class="filter__title">ДОПОЛНИТЕЛЬНО</h3>
+								<div class="filter__checkboxes">
+									<label class="square-checkbox filter__checkbox" for="filter-checkbox-01">
+										<input class="square-checkbox__input" type="checkbox" id="filter-checkbox-01">
+										<span class="square-checkbox__icon"></span>
+										<span class="square-checkbox__label">ТОВАРЫ ПО АКЦИИ</span>
+									</label>
+									<label class="square-checkbox filter__checkbox" for="filter-checkbox-02">
+										<input class="square-checkbox__input" type="checkbox" id="filter-checkbox-02">
+										<span class="square-checkbox__icon"></span>
+										<span class="square-checkbox__label">В НАЛИЧИИ НА СКЛАДЕ</span>
+									</label>
+									<label class="square-checkbox filter__checkbox" for="filter-checkbox-03">
+										<input class="square-checkbox__input" type="checkbox" id="filter-checkbox-03">
+										<span class="square-checkbox__icon"></span>
+										<span class="square-checkbox__label">КРУПНАЯ ПОСТАВКА</span>
+									</label>
+								</div>
 							</div>
+							<button class="filter__btn btn btn--sm">Применить фильтры</button>
+						</form>
+						<div class="filter__overlay" id="filter-overlay"></div>
+					</div>
+				</div>
+				<div class="catalog__wrapper">
+					<div class="catalog__left">
+						<div class="filter">
+							<form action="" class="filter__form">
+								<div class="filter__block">
+									<h3 class="filter__title">ФИЛЬТРЫ</h3>
+									<div class="input-control filter__select">
+										<select class="input-control__select">
+											<option value="0">Одна или несколько</option>
+											<option value="1">Одна</option>
+											<option value="2">10</option>
+											<option value="3">20</option>
+										</select>
+										<label class="input-control__label">КУЛЬТУРА</label>
+										<div class="input-control__line"></div>
+									</div>
+									<div class="filter__checkboxes">
+										<label class="circle-checkbox filter__checkbox" for="filter-couture-01">
+											<input class="circle-checkbox__input" type="radio" name="filter-couture" id="filter-couture-01">
+											<span class="circle-checkbox__icon"></span>
+											<span class="circle-checkbox__label">ЯРОВЫЕ КУЛЬТУРЫ</span>
+										</label>
+										<label class="circle-checkbox filter__checkbox" for="filter-couture-02">
+											<input class="circle-checkbox__input" type="radio" name="filter-couture" id="filter-couture-02">
+											<span class="circle-checkbox__icon"></span>
+											<span class="circle-checkbox__label">ОЗИМОВЫЕ КУЛЬТУРЫ</span>
+										</label>
+									</div>
+									<div class="input-control filter__select">
+										<select class="input-control__select">
+											<option value="0">Одна или несколько</option>
+											<option value="1">Вид 1</option>
+											<option value="2">Вид 2</option>
+										</select>
+										<label class="input-control__label">ВИД ПРЕПАРАТА</label>
+										<div class="input-control__line"></div>
+									</div>
+									<div class="input-control filter__select">
+										<select class="input-control__select">
+											<option value="0">Выберите страну посева</option>
+											<option value="1">Страна 1</option>
+											<option value="2">Страна 2</option>
+										</select>
+										<label class="input-control__label">СТРАНА</label>
+										<div class="input-control__line"></div>
+									</div>
+									<div class="input-control filter__select">
+										<select class="input-control__select">
+											<option value="0">Выберите регион посева</option>
+											<option value="1">Регион 1</option>
+											<option value="2">Регион 2</option>
+										</select>
+										<label class="input-control__label">РЕГИОН</label>
+										<div class="input-control__line"></div>
+									</div>
+								</div>
+								<div class="filter__block">
+									<h3 class="filter__title">ЦЕНА</h3>
+								</div>
+								<div class="filter__block">
+									<h3 class="filter__title">ДОПОЛНИТЕЛЬНО</h3>
+									<div class="filter__checkboxes">
+										<label class="square-checkbox filter__checkbox" for="filter-checkbox-01">
+											<input class="square-checkbox__input" type="checkbox" id="filter-checkbox-01">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__label">ТОВАРЫ ПО АКЦИИ</span>
+										</label>
+										<label class="square-checkbox filter__checkbox" for="filter-checkbox-02">
+											<input class="square-checkbox__input" type="checkbox" id="filter-checkbox-02">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__label">В НАЛИЧИИ НА СКЛАДЕ</span>
+										</label>
+										<label class="square-checkbox filter__checkbox" for="filter-checkbox-03">
+											<input class="square-checkbox__input" type="checkbox" id="filter-checkbox-03">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__label">КРУПНАЯ ПОСТАВКА</span>
+										</label>
+									</div>
+								</div>
+							</form>
 						</div>
 					</div>
 					<div class="catalog__right">
