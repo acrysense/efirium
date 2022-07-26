@@ -108,79 +108,89 @@
 							</svg>
 						</button>
 						<form action="" class="filter__form">
-							<div class="filter__block">
-								<h3 class="filter__title">ФИЛЬТРЫ</h3>
-								<div class="input-control filter__select">
-									<select class="input-control__select">
-										<option value="0">Одна или несколько</option>
-										<option value="1">Одна</option>
-										<option value="2">10</option>
-										<option value="3">20</option>
-									</select>
-									<label class="input-control__label">КУЛЬТУРА</label>
-									<div class="input-control__line"></div>
+							<div class="filter__main">
+								<div class="filter__top">
+									<h3 class="filter__heading">ФИЛЬТРЫ</h3>
+									<button class="filter__close" id="filter-close" aria-label="Фильтры">
+										<svg class="filter__close-icon">
+											<use xlink:href="img/sprite.svg#icon-close"></use>
+										</svg>
+									</button>
 								</div>
-								<div class="filter__checkboxes">
-									<label class="circle-checkbox filter__checkbox" for="filter-couture-01">
-										<input class="circle-checkbox__input" type="radio" name="filter-couture" id="filter-couture-01">
-										<span class="circle-checkbox__icon"></span>
-										<span class="circle-checkbox__label">ЯРОВЫЕ КУЛЬТУРЫ</span>
-									</label>
-									<label class="circle-checkbox filter__checkbox" for="filter-couture-02">
-										<input class="circle-checkbox__input" type="radio" name="filter-couture" id="filter-couture-02">
-										<span class="circle-checkbox__icon"></span>
-										<span class="circle-checkbox__label">ОЗИМОВЫЕ КУЛЬТУРЫ</span>
-									</label>
+								<div class="filter__block">
+									<h3 class="filter__title filter__title--mobile">НАПРАВЛЕНИЕ</h3>
+									<div class="input-control filter__select">
+										<select class="input-control__select">
+											<option value="0">Одна или несколько</option>
+											<option value="1">Одна</option>
+											<option value="2">10</option>
+											<option value="3">20</option>
+										</select>
+										<label class="input-control__label">КУЛЬТУРА</label>
+										<div class="input-control__line"></div>
+									</div>
+									<div class="filter__checkboxes">
+										<label class="circle-checkbox filter__checkbox" for="filter-couture-01">
+											<input class="circle-checkbox__input" type="radio" name="filter-couture" id="filter-couture-01">
+											<span class="circle-checkbox__icon"></span>
+											<span class="circle-checkbox__label">ЯРОВЫЕ КУЛЬТУРЫ</span>
+										</label>
+										<label class="circle-checkbox filter__checkbox" for="filter-couture-02">
+											<input class="circle-checkbox__input" type="radio" name="filter-couture" id="filter-couture-02">
+											<span class="circle-checkbox__icon"></span>
+											<span class="circle-checkbox__label">ОЗИМОВЫЕ КУЛЬТУРЫ</span>
+										</label>
+									</div>
+									<div class="input-control filter__select">
+										<select class="input-control__select">
+											<option value="0">Одна или несколько</option>
+											<option value="1">Вид 1</option>
+											<option value="2">Вид 2</option>
+										</select>
+										<label class="input-control__label">ВИД ПРЕПАРАТА</label>
+										<div class="input-control__line"></div>
+									</div>
+									<div class="input-control filter__select">
+										<select class="input-control__select">
+											<option value="0">Выберите страну посева</option>
+											<option value="1">Страна 1</option>
+											<option value="2">Страна 2</option>
+										</select>
+										<label class="input-control__label">СТРАНА</label>
+										<div class="input-control__line"></div>
+									</div>
+									<div class="input-control filter__select">
+										<select class="input-control__select">
+											<option value="0">Выберите регион посева</option>
+											<option value="1">Регион 1</option>
+											<option value="2">Регион 2</option>
+										</select>
+										<label class="input-control__label">РЕГИОН</label>
+										<div class="input-control__line"></div>
+									</div>
 								</div>
-								<div class="input-control filter__select">
-									<select class="input-control__select">
-										<option value="0">Одна или несколько</option>
-										<option value="1">Вид 1</option>
-										<option value="2">Вид 2</option>
-									</select>
-									<label class="input-control__label">ВИД ПРЕПАРАТА</label>
-									<div class="input-control__line"></div>
+								<div class="filter__block">
+									<h3 class="filter__title">ЦЕНА</h3>
 								</div>
-								<div class="input-control filter__select">
-									<select class="input-control__select">
-										<option value="0">Выберите страну посева</option>
-										<option value="1">Страна 1</option>
-										<option value="2">Страна 2</option>
-									</select>
-									<label class="input-control__label">СТРАНА</label>
-									<div class="input-control__line"></div>
-								</div>
-								<div class="input-control filter__select">
-									<select class="input-control__select">
-										<option value="0">Выберите регион посева</option>
-										<option value="1">Регион 1</option>
-										<option value="2">Регион 2</option>
-									</select>
-									<label class="input-control__label">РЕГИОН</label>
-									<div class="input-control__line"></div>
-								</div>
-							</div>
-							<div class="filter__block">
-								<h3 class="filter__title">ЦЕНА</h3>
-							</div>
-							<div class="filter__block">
-								<h3 class="filter__title">ДОПОЛНИТЕЛЬНО</h3>
-								<div class="filter__checkboxes">
-									<label class="square-checkbox filter__checkbox" for="filter-checkbox-01">
-										<input class="square-checkbox__input" type="checkbox" id="filter-checkbox-01">
-										<span class="square-checkbox__icon"></span>
-										<span class="square-checkbox__label">ТОВАРЫ ПО АКЦИИ</span>
-									</label>
-									<label class="square-checkbox filter__checkbox" for="filter-checkbox-02">
-										<input class="square-checkbox__input" type="checkbox" id="filter-checkbox-02">
-										<span class="square-checkbox__icon"></span>
-										<span class="square-checkbox__label">В НАЛИЧИИ НА СКЛАДЕ</span>
-									</label>
-									<label class="square-checkbox filter__checkbox" for="filter-checkbox-03">
-										<input class="square-checkbox__input" type="checkbox" id="filter-checkbox-03">
-										<span class="square-checkbox__icon"></span>
-										<span class="square-checkbox__label">КРУПНАЯ ПОСТАВКА</span>
-									</label>
+								<div class="filter__block">
+									<h3 class="filter__title">ДОПОЛНИТЕЛЬНО</h3>
+									<div class="filter__checkboxes">
+										<label class="square-checkbox filter__checkbox" for="filter-checkbox-01">
+											<input class="square-checkbox__input" type="checkbox" id="filter-checkbox-01">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__label">ТОВАРЫ ПО АКЦИИ</span>
+										</label>
+										<label class="square-checkbox filter__checkbox" for="filter-checkbox-02">
+											<input class="square-checkbox__input" type="checkbox" id="filter-checkbox-02">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__label">В НАЛИЧИИ НА СКЛАДЕ</span>
+										</label>
+										<label class="square-checkbox filter__checkbox" for="filter-checkbox-03">
+											<input class="square-checkbox__input" type="checkbox" id="filter-checkbox-03">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__label">КРУПНАЯ ПОСТАВКА</span>
+										</label>
+									</div>
 								</div>
 							</div>
 							<button class="filter__btn btn btn--sm">Применить фильтры</button>
@@ -308,10 +318,10 @@
 								</div>
 								<div class="catalog__buttons">
 									<a href="#" class="catalog__btn btn btn--sm btn--transparent">Перезвонить</a>
-									<a href="#" class="catalog__btn btn btn--sm">Заказать</a>
+									<a href="#" class="catalog__btn btn btn--sm modal-btn" data-id="order-modal">Заказать</a>
 								</div>
 							</div>
-							<a href="#" class="catalog__btn catalog__btn--mobile btn">Заказать</a>
+							<a href="#" class="catalog__btn catalog__btn--mobile btn modal-btn" data-id="order-modal">Заказать</a>
 						</article>
 						<article class="catalog__item">
 							<a href="product.html" class="catalog__img">
@@ -350,10 +360,10 @@
 								</div>
 								<div class="catalog__buttons">
 									<a href="#" class="catalog__btn btn btn--sm btn--transparent">Перезвонить</a>
-									<a href="#" class="catalog__btn btn btn--sm">Заказать</a>
+									<a href="#" class="catalog__btn btn btn--sm modal-btn" data-id="order-modal">Заказать</a>
 								</div>
 							</div>
-							<a href="#" class="catalog__btn catalog__btn--mobile btn">Заказать</a>
+							<a href="#" class="catalog__btn catalog__btn--mobile btn modal-btn" data-id="order-modal">Заказать</a>
 						</article>
 						<article class="catalog__item">
 							<a href="product.html" class="catalog__img">
@@ -392,10 +402,10 @@
 								</div>
 								<div class="catalog__buttons">
 									<a href="#" class="catalog__btn btn btn--sm btn--transparent">Перезвонить</a>
-									<a href="#" class="catalog__btn btn btn--sm">Заказать</a>
+									<a href="#" class="catalog__btn btn btn--sm modal-btn" data-id="order-modal">Заказать</a>
 								</div>
 							</div>
-							<a href="#" class="catalog__btn catalog__btn--mobile btn">Заказать</a>
+							<a href="#" class="catalog__btn catalog__btn--mobile btn modal-btn" data-id="order-modal">Заказать</a>
 						</article>
 						<article class="catalog__item">
 							<a href="product.html" class="catalog__img">
@@ -435,10 +445,10 @@
 								</div>
 								<div class="catalog__buttons">
 									<a href="#" class="catalog__btn btn btn--sm btn--transparent">Перезвонить</a>
-									<a href="#" class="catalog__btn btn btn--sm">Заказать</a>
+									<a href="#" class="catalog__btn btn btn--sm modal-btn" data-id="order-modal">Заказать</a>
 								</div>
 							</div>
-							<a href="#" class="catalog__btn catalog__btn--mobile btn">Заказать</a>
+							<a href="#" class="catalog__btn catalog__btn--mobile btn modal-btn" data-id="order-modal">Заказать</a>
 						</article>
 						<article class="catalog__item">
 							<a href="product.html" class="catalog__img">
@@ -476,10 +486,10 @@
 								</div>
 								<div class="catalog__buttons">
 									<a href="#" class="catalog__btn btn btn--sm btn--transparent">Перезвонить</a>
-									<a href="#" class="catalog__btn btn btn--sm">Заказать</a>
+									<a href="#" class="catalog__btn btn btn--sm modal-btn" data-id="order-modal">Заказать</a>
 								</div>
 							</div>
-							<a href="#" class="catalog__btn catalog__btn--mobile btn">Заказать</a>
+							<a href="#" class="catalog__btn catalog__btn--mobile btn modal-btn" data-id="order-modal">Заказать</a>
 						</article>
 						<article class="catalog__item">
 							<a href="product.html" class="catalog__img">
@@ -517,10 +527,10 @@
 								</div>
 								<div class="catalog__buttons">
 									<a href="#" class="catalog__btn btn btn--sm btn--transparent">Перезвонить</a>
-									<a href="#" class="catalog__btn btn btn--sm">Заказать</a>
+									<a href="#" class="catalog__btn btn btn--sm modal-btn" data-id="order-modal">Заказать</a>
 								</div>
 							</div>
-							<a href="#" class="catalog__btn catalog__btn--mobile btn">Заказать</a>
+							<a href="#" class="catalog__btn catalog__btn--mobile btn modal-btn" data-id="order-modal">Заказать</a>
 						</article>
 						<article class="catalog__item">
 							<a href="product.html" class="catalog__img">
@@ -558,10 +568,10 @@
 								</div>
 								<div class="catalog__buttons">
 									<a href="#" class="catalog__btn btn btn--sm btn--transparent">Перезвонить</a>
-									<a href="#" class="catalog__btn btn btn--sm">Заказать</a>
+									<a href="#" class="catalog__btn btn btn--sm modal-btn" data-id="order-modal">Заказать</a>
 								</div>
 							</div>
-							<a href="#" class="catalog__btn catalog__btn--mobile btn">Заказать</a>
+							<a href="#" class="catalog__btn catalog__btn--mobile btn modal-btn" data-id="order-modal">Заказать</a>
 						</article>
 						<article class="catalog__item">
 							<a href="product.html" class="catalog__img">
@@ -600,10 +610,10 @@
 								</div>
 								<div class="catalog__buttons">
 									<a href="#" class="catalog__btn btn btn--sm btn--transparent">Перезвонить</a>
-									<a href="#" class="catalog__btn btn btn--sm">Заказать</a>
+									<a href="#" class="catalog__btn btn btn--sm modal-btn" data-id="order-modal">Заказать</a>
 								</div>
 							</div>
-							<a href="#" class="catalog__btn catalog__btn--mobile btn">Заказать</a>
+							<a href="#" class="catalog__btn catalog__btn--mobile btn modal-btn" data-id="order-modal">Заказать</a>
 						</article>
 						<article class="catalog__item">
 							<a href="product.html" class="catalog__img">
@@ -641,10 +651,10 @@
 								</div>
 								<div class="catalog__buttons">
 									<a href="#" class="catalog__btn btn btn--sm btn--transparent">Перезвонить</a>
-									<a href="#" class="catalog__btn btn btn--sm">Заказать</a>
+									<a href="#" class="catalog__btn btn btn--sm modal-btn" data-id="order-modal">Заказать</a>
 								</div>
 							</div>
-							<a href="#" class="catalog__btn catalog__btn--mobile btn">Заказать</a>
+							<a href="#" class="catalog__btn catalog__btn--mobile btn modal-btn" data-id="order-modal">Заказать</a>
 						</article>
 						<article class="catalog__item">
 							<a href="product.html" class="catalog__img">
@@ -682,10 +692,10 @@
 								</div>
 								<div class="catalog__buttons">
 									<a href="#" class="catalog__btn btn btn--sm btn--transparent">Перезвонить</a>
-									<a href="#" class="catalog__btn btn btn--sm">Заказать</a>
+									<a href="#" class="catalog__btn btn btn--sm modal-btn" data-id="order-modal">Заказать</a>
 								</div>
 							</div>
-							<a href="#" class="catalog__btn catalog__btn--mobile btn">Заказать</a>
+							<a href="#" class="catalog__btn catalog__btn--mobile btn modal-btn" data-id="order-modal">Заказать</a>
 						</article>
 						<article class="catalog__item">
 							<a href="product.html" class="catalog__img">
@@ -723,10 +733,10 @@
 								</div>
 								<div class="catalog__buttons">
 									<a href="#" class="catalog__btn btn btn--sm btn--transparent">Перезвонить</a>
-									<a href="#" class="catalog__btn btn btn--sm">Заказать</a>
+									<a href="#" class="catalog__btn btn btn--sm modal-btn" data-id="order-modal">Заказать</a>
 								</div>
 							</div>
-							<a href="#" class="catalog__btn catalog__btn--mobile btn">Заказать</a>
+							<a href="#" class="catalog__btn catalog__btn--mobile btn modal-btn" data-id="order-modal">Заказать</a>
 						</article>
 						<article class="catalog__item">
 							<a href="product.html" class="catalog__img">
@@ -764,10 +774,10 @@
 								</div>
 								<div class="catalog__buttons">
 									<a href="#" class="catalog__btn btn btn--sm btn--transparent">Перезвонить</a>
-									<a href="#" class="catalog__btn btn btn--sm">Заказать</a>
+									<a href="#" class="catalog__btn btn btn--sm modal-btn" data-id="order-modal">Заказать</a>
 								</div>
 							</div>
-							<a href="#" class="catalog__btn catalog__btn--mobile btn">Заказать</a>
+							<a href="#" class="catalog__btn catalog__btn--mobile btn modal-btn" data-id="order-modal">Заказать</a>
 						</article>
 						<article class="catalog__item">
 							<a href="product.html" class="catalog__img">
@@ -807,10 +817,10 @@
 								</div>
 								<div class="catalog__buttons">
 									<a href="#" class="catalog__btn btn btn--sm btn--transparent">Перезвонить</a>
-									<a href="#" class="catalog__btn btn btn--sm">Заказать</a>
+									<a href="#" class="catalog__btn btn btn--sm modal-btn" data-id="order-modal">Заказать</a>
 								</div>
 							</div>
-							<a href="#" class="catalog__btn catalog__btn--mobile btn">Заказать</a>
+							<a href="#" class="catalog__btn catalog__btn--mobile btn modal-btn" data-id="order-modal">Заказать</a>
 						</article>
 						<article class="catalog__item">
 							<a href="product.html" class="catalog__img">
@@ -848,10 +858,10 @@
 								</div>
 								<div class="catalog__buttons">
 									<a href="#" class="catalog__btn btn btn--sm btn--transparent">Перезвонить</a>
-									<a href="#" class="catalog__btn btn btn--sm">Заказать</a>
+									<a href="#" class="catalog__btn btn btn--sm modal-btn" data-id="order-modal">Заказать</a>
 								</div>
 							</div>
-							<a href="#" class="catalog__btn catalog__btn--mobile btn">Заказать</a>
+							<a href="#" class="catalog__btn catalog__btn--mobile btn modal-btn" data-id="order-modal">Заказать</a>
 						</article>
 						<article class="catalog__item">
 							<a href="product.html" class="catalog__img">
@@ -889,10 +899,10 @@
 								</div>
 								<div class="catalog__buttons">
 									<a href="#" class="catalog__btn btn btn--sm btn--transparent">Перезвонить</a>
-									<a href="#" class="catalog__btn btn btn--sm">Заказать</a>
+									<a href="#" class="catalog__btn btn btn--sm modal-btn" data-id="order-modal">Заказать</a>
 								</div>
 							</div>
-							<a href="#" class="catalog__btn catalog__btn--mobile btn">Заказать</a>
+							<a href="#" class="catalog__btn catalog__btn--mobile btn modal-btn" data-id="order-modal">Заказать</a>
 						</article>
 					</div>
 				</div>
@@ -1159,6 +1169,84 @@
 		</div>
 	</footer>
 	<!-- end of footer -->
+	<!-- modals -->
+	<div class="modal" id="order-modal">
+		<div class="modal__scroll">
+			<div class="modal__wrapper">
+				<div class="modal__top">
+					<h3 class="modal__heading">Заказать</h3>
+					<button class="modal__close" aria-label="Закрыть">
+						<svg class="modal__close-icon">
+							<use xlink:href="img/sprite.svg#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+				<form action="#" class="modal-form modal__form">
+					<div class="modal-form__main">
+						<div class="modal-form__inner">
+							<div class="input-control modal-form__input">
+								<select class="input-control__select">
+									<option value="0">Выберите объем</option>
+									<option value="1">5 л</option>
+									<option value="2">10 л</option>
+									<option value="3">50 л</option>
+									<option value="4">100 л</option>
+								</select>
+								<label class="input-control__label">Количество средства</label>
+								<div class="input-control__line"></div>
+							</div>
+							<div class="input-control modal-form__input">
+								<input type="text" id="modal-name" class="input-control__input" placeholder="Введите название" required>
+								<label for="modal-name" class="input-control__label">Название компании</label>
+								<div class="input-control__line"></div>
+							</div>
+						</div>
+						<div class="modal-form__inner">
+							<div class="input-control modal-form__input">
+								<input type="text" id="modal-full-name" class="input-control__input" placeholder="Введите ФИО" required>
+								<label for="modal-full-name" class="input-control__label">Полное имя</label>
+								<div class="input-control__line"></div>
+							</div>
+						</div>
+						<div class="modal-form__inner">
+							<div class="input-control modal-form__input">
+								<input type="tel" id="modal-number" class="input-control__input" placeholder="Введите номер" data-inputmask="'mask': '+7 (999) 999-99-99'" required>
+								<label for="modal-number" class="input-control__label">Номер телефона</label>
+								<div class="input-control__line"></div>
+							</div>
+							<div class="input-control modal-form__input">
+								<input type="email" id="modal-email" class="input-control__input" placeholder="Введите email" required>
+								<label for="modal-email" class="input-control__label">Ваш email</label>
+								<div class="input-control__line"></div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-form__bottom">
+						<button class="modal-form__btn btn">Заказать</button>
+						<p class="modal-form__help">Нажимая кнопку «ЗАКАЗАТЬ», вы принимаете условия <a href="#">Пользовательского соглашения</a></p>
+					</div>
+				</form>
+				<div class="modal__product modal-product">
+					<div class="modal-product__img">
+						<img src="img/products-01.png" alt="Image">
+					</div>
+					<div class="modal-product__body">
+						<h3 class="modal-product__title">Эфицид 500</h3>
+						<p class="modal-product__description">Универсальное комплексное органоминеральное удобрение с высоким содержанием NPK, микроэлементов в полимерно-хелатной форме и натриевых солей гуминовых кислот</p>
+					</div>
+					<div class="modal-product__info">
+						<div class="modal-product__prices">
+							<span class="modal-product__price modal-product__price--new">11 236 ₽</span>
+							<span class="modal-product__price modal-product__price--old">15 236 ₽</span>
+						</div>
+						<span class="modal-product__help">Россия, <br>Беларусь, Молдова, Сербия</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__overlay"></div>
+	</div>
+	<!-- end of modals -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
