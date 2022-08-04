@@ -171,6 +171,19 @@
 								</div>
 								<div class="filter__block">
 									<h3 class="filter__title">ЦЕНА</h3>
+									<div class="filter__inner">
+										<div class="input-control filter__input">
+											<input type="number" id="range-money-min" class="input-control__input" placeholder="от 0₽">
+											<div class="input-control__line"></div>
+										</div>
+										<div class="input-control filter__input">
+											<input type="number" id="range-money-max" class="input-control__input" placeholder="до 20000₽">
+											<div class="input-control__line"></div>
+										</div>
+									</div>
+									<div class="filter__range">
+										<div id="range-money"></div>
+									</div>
 								</div>
 								<div class="filter__block">
 									<h3 class="filter__title">ДОПОЛНИТЕЛЬНО</h3>
@@ -215,13 +228,13 @@
 										<div class="input-control__line"></div>
 									</div>
 									<div class="filter__checkboxes">
-										<label class="circle-checkbox filter__checkbox" for="filter-couture-01">
-											<input class="circle-checkbox__input" type="radio" name="filter-couture" id="filter-couture-01">
+										<label class="circle-checkbox filter__checkbox" for="filter-couture-11">
+											<input class="circle-checkbox__input" type="radio" name="filter-couture" id="filter-couture-11">
 											<span class="circle-checkbox__icon"></span>
 											<span class="circle-checkbox__label">ЯРОВЫЕ КУЛЬТУРЫ</span>
 										</label>
-										<label class="circle-checkbox filter__checkbox" for="filter-couture-02">
-											<input class="circle-checkbox__input" type="radio" name="filter-couture" id="filter-couture-02">
+										<label class="circle-checkbox filter__checkbox" for="filter-couture-12">
+											<input class="circle-checkbox__input" type="radio" name="filter-couture" id="filter-couture-12">
 											<span class="circle-checkbox__icon"></span>
 											<span class="circle-checkbox__label">ОЗИМОВЫЕ КУЛЬТУРЫ</span>
 										</label>
@@ -256,22 +269,35 @@
 								</div>
 								<div class="filter__block">
 									<h3 class="filter__title">ЦЕНА</h3>
+									<div class="filter__inner">
+										<div class="input-control product-form__input">
+											<input type="number" id="range-money-min" class="input-control__input" placeholder="от 0₽">
+											<div class="input-control__line"></div>
+										</div>
+										<div class="input-control product-form__input">
+											<input type="number" id="range-money-max" class="input-control__input" placeholder="до 20000₽">
+											<div class="input-control__line"></div>
+										</div>
+									</div>
+									<div class="filter__range">
+										<div id="range-money"></div>
+									</div>
 								</div>
 								<div class="filter__block">
 									<h3 class="filter__title">ДОПОЛНИТЕЛЬНО</h3>
 									<div class="filter__checkboxes">
-										<label class="square-checkbox filter__checkbox" for="filter-checkbox-01">
-											<input class="square-checkbox__input" type="checkbox" id="filter-checkbox-01">
+										<label class="square-checkbox filter__checkbox" for="filter-checkbox-11">
+											<input class="square-checkbox__input" type="checkbox" id="filter-checkbox-11">
 											<span class="square-checkbox__icon"></span>
 											<span class="square-checkbox__label">ТОВАРЫ ПО АКЦИИ</span>
 										</label>
-										<label class="square-checkbox filter__checkbox" for="filter-checkbox-02">
-											<input class="square-checkbox__input" type="checkbox" id="filter-checkbox-02">
+										<label class="square-checkbox filter__checkbox" for="filter-checkbox-12">
+											<input class="square-checkbox__input" type="checkbox" id="filter-checkbox-12">
 											<span class="square-checkbox__icon"></span>
 											<span class="square-checkbox__label">В НАЛИЧИИ НА СКЛАДЕ</span>
 										</label>
-										<label class="square-checkbox filter__checkbox" for="filter-checkbox-03">
-											<input class="square-checkbox__input" type="checkbox" id="filter-checkbox-03">
+										<label class="square-checkbox filter__checkbox" for="filter-checkbox-13">
+											<input class="square-checkbox__input" type="checkbox" id="filter-checkbox-13">
 											<span class="square-checkbox__icon"></span>
 											<span class="square-checkbox__label">КРУПНАЯ ПОСТАВКА</span>
 										</label>
