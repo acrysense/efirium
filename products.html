@@ -1272,6 +1272,60 @@
 		</div>
 		<div class="modal__overlay"></div>
 	</div>
+	<div class="modal" id="success-modal">
+		<div class="modal__scroll">
+			<div class="modal__wrapper info-modal">
+				<div class="modal__top">
+					<button class="modal__close" aria-label="Закрыть">
+						<svg class="modal__close-icon">
+							<use xlink:href="img/sprite.svg#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="info-modal__wrapper modal__info-modal">
+					<div class="info-modal__body">
+						<picture class="info-modal__icon">
+							<img src="img/success-icon.svg" alt="Image">
+						</picture>
+						<h3 class="info-modal__title">УСПЕШНО ОТПРАВЛЕНО!</h3>
+						<p class="info-modal__description">
+							Ваша заявка на покупку Эфицид Про в объеме 10 литров
+							успешно отправлена нашим менеджерам, мы свяжемся
+							с вами в ближайшее время!
+						</p>
+					</div>
+					<a href="#" class="info-modal__btn modal__close btn">Хорошо</a>
+				</div>
+			</div>
+		</div>
+		<div class="modal__overlay"></div>
+	</div>
+	<div class="modal" id="warning-modal">
+		<div class="modal__scroll">
+			<div class="modal__wrapper info-modal">
+				<div class="modal__top">
+					<button class="modal__close-btn modal__close" aria-label="Закрыть">
+						<svg class="modal__close-icon">
+							<use xlink:href="img/sprite.svg#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="info-modal__wrapper modal__info-modal">
+					<div class="info-modal__body">
+						<picture class="info-modal__icon">
+							<img src="img/warning-icon.svg" alt="Image">
+						</picture>
+						<h3 class="info-modal__title">ЧТО-то пошло не так...</h3>
+						<p class="info-modal__description">
+							Мы не смогли отправить Вашу заявку, возможно сервер перегружен или вы указали не верные данные. Попробуйте отправить заявку чуть позже...
+						</p>
+					</div>
+					<a href="#" class="info-modal__btn modal__close btn">Попробовать снова</a>
+				</div>
+			</div>
+		</div>
+		<div class="modal__overlay"></div>
+	</div>
 	<!-- end of modals -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
