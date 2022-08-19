@@ -6,8 +6,61 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ЭФИРИУМ - Контакты</title>
+	<!-- font -->
+	<style>
+		@font-face {
+			font-family: "Montserrat";
+			font-style: normal;
+			font-weight: 400;
+			font-display: swap;
+			src: local("Montserrat"), url("fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat/Montserrat-Regular.eot") format("embedded-opentype")
+		}
+
+		@font-face {
+			font-family: "Montserrat";
+			font-style: normal;
+			font-weight: 500;
+			font-display: swap;
+			src: local("Montserrat"), url("fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"), url("fonts/Montserrat/Montserrat-Medium.woff") format("woff"), url("fonts/Montserrat/Montserrat-Medium.eot") format("embedded-opentype")
+		}
+
+		@font-face {
+			font-family: "Montserrat";
+			font-style: normal;
+			font-weight: 600;
+			font-display: swap;
+			src: local("Montserrat"), url("fonts/Montserrat/Montserrat-SemiBold.woff2") format("woff2"), url("fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("fonts/Montserrat/Montserrat-SemiBold.eot") format("embedded-opentype")
+		}
+
+		@font-face {
+			font-family: "Montserrat";
+			font-style: normal;
+			font-weight: 700;
+			font-display: swap;
+			src: local("Montserrat"), url("fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("fonts/Montserrat/Montserrat-Bold.eot") format("embedded-opentype")
+		}
+
+		@font-face {
+			font-family: "Montserrat";
+			font-style: normal;
+			font-weight: 800;
+			font-display: swap;
+			src: local("Montserrat"), url("fonts/Montserrat/Montserrat-ExtraBold.woff2") format("woff2"), url("fonts/Montserrat/Montserrat-ExtraBold.woff") format("woff"), url("fonts/Montserrat/Montserrat-ExtraBold.eot") format("embedded-opentype")
+		}
+
+		@font-face {
+			font-family: "Montserrat";
+			font-style: normal;
+			font-weight: 900;
+			font-display: swap;
+			src: local("Montserrat"), url("fonts/Montserrat/Montserrat-Black.woff2") format("woff2"), url("fonts/Montserrat/Montserrat-Black.woff") format("woff"), url("fonts/Montserrat/Montserrat-Black.eot") format("embedded-opentype")
+		}
+	</style>
 	<!-- styles -->
-	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="libs/aos/aos.css">
+	<link rel="stylesheet" href="libs/slim-select/slimselect.min.css">
+	<link rel="stylesheet" href="libs/fancybox/fancybox.css">
+	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 
@@ -129,27 +182,6 @@
 										<a href="mailto:examplemail@gmail.com" class="contacts__link">example@mail.com</a>
 									</li>
 								</ul>
-								<ul class="c-socials contacts__socials">
-									<li class="c-socials__item">
-										<a href="#" class="c-socials__link c-socials__link--text">
-											<span class="c-socials__title">ПОЗВОНИТЬ</span>
-										</a>
-									</li>
-									<li class="c-socials__item">
-										<a href="#" class="c-socials__link">
-											<svg class="c-socials__icon">
-												<use xlink:href="img/sprite.svg#icon-instagram"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="c-socials__item">
-										<a href="#" class="c-socials__link">
-											<svg class="c-socials__icon">
-												<use xlink:href="img/sprite.svg#icon-telegram"></use>
-											</svg>
-										</a>
-									</li>
-								</ul>
 							</div>
 							<div class="contacts-tabs__wrapper">
 								<p class="contacts__description">Новое решение для длительного контроля широкого спектра сорняков в посевах кукурузы...</p>
@@ -164,31 +196,32 @@
 										<a href="mailto:examplemail@gmail.com" class="contacts__link">mail@gmail.com</a>
 									</li>
 								</ul>
-								<ul class="c-socials contacts__socials">
-									<li class="c-socials__item">
-										<a href="#" class="c-socials__link c-socials__link--text">
-											<span class="c-socials__title">ПОЗВОНИТЬ</span>
-										</a>
-									</li>
-									<li class="c-socials__item">
-										<a href="#" class="c-socials__link">
-											<svg class="c-socials__icon">
-												<use xlink:href="img/sprite.svg#icon-instagram"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="c-socials__item">
-										<a href="#" class="c-socials__link">
-											<svg class="c-socials__icon">
-												<use xlink:href="img/sprite.svg#icon-telegram"></use>
-											</svg>
-										</a>
-									</li>
-								</ul>
 							</div>
 						</div>
 					</div>
+					<ul class="c-socials contacts__socials">
+						<li class="c-socials__item">
+							<a href="#" class="c-socials__link c-socials__link--text">
+								<span class="c-socials__title">ПОЗВОНИТЬ</span>
+							</a>
+						</li>
+						<li class="c-socials__item">
+							<a href="#" class="c-socials__link">
+								<svg class="c-socials__icon">
+									<use xlink:href="img/sprite.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="c-socials__item">
+							<a href="#" class="c-socials__link">
+								<svg class="c-socials__icon">
+									<use xlink:href="img/sprite.svg#icon-telegram"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
 				</div>
+				<div class="contacts__map"></div>
 			</div>
 		</section>
 		<!-- end of contacts -->
@@ -374,7 +407,11 @@
 	</div>
 	<!-- end of notifications -->
 	<!-- scripts -->
-	<script src="js/vendor.min.js"></script>
+	<script src="libs/aos/aos.js"></script>
+	<script src="libs/slim-select/slimselect.min.js"></script>
+	<script src="libs/fancybox/fancybox.umd.js"></script>
+	<script src="libs/inputmask/inputmask.min.js"></script>
+	<script src="libs/swiper/swiper-bundle.min.js"></script>
 	<script src="js/app.min.js"></script>
 </body>
 
